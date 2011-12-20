@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002EC43014A0093A0005E68D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC42F14A0093A0005E68D /* UIKit.framework */; };
+		002EC43214A0093A0005E68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43114A0093A0005E68D /* Foundation.framework */; };
+		002EC43414A0093A0005E68D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43314A0093A0005E68D /* CoreGraphics.framework */; };
+		002EC43A14A0093A0005E68D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 002EC43814A0093A0005E68D /* InfoPlist.strings */; };
+		002EC43C14A0093A0005E68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC43B14A0093A0005E68D /* main.m */; };
+		002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC43F14A0093A0005E68D /* PHAppDelegate.m */; };
+		002EC44314A0093A0005E68D /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44214A0093A0005E68D /* PHViewController.m */; };
+		002EC44614A0093A0005E68D /* PHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002EC44414A0093A0005E68D /* PHViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHRefreshTriggerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EC42F14A0093A0005E68D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		002EC43114A0093A0005E68D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		002EC43314A0093A0005E68D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */ = {isa = PBXFileReference; path = "PHRefreshTriggerView-Info.plist"; sourceTree = "<group>"; };
+		002EC43914A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		002EC43B14A0093A0005E68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */ = {isa = PBXFileReference; path = "PHRefreshTriggerView-Prefix.pch"; sourceTree = "<group>"; };
+		002EC43E14A0093A0005E68D /* PHAppDelegate.h */ = {isa = PBXFileReference; path = PHAppDelegate.h; sourceTree = "<group>"; };
+		002EC43F14A0093A0005E68D /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
+		002EC44114A0093A0005E68D /* PHViewController.h */ = {isa = PBXFileReference; path = PHViewController.h; sourceTree = "<group>"; };
+		002EC44214A0093A0005E68D /* PHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
+		002EC44514A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PHViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		002EC42814A0093A0005E68D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EC43014A0093A0005E68D /* UIKit.framework in Frameworks */,
+				002EC43214A0093A0005E68D /* Foundation.framework in Frameworks */,
+				002EC43414A0093A0005E68D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002EC42014A0093A0005E68D = {
+			isa = PBXGroup;
+			children = (
+				002EC43514A0093A0005E68D /* PHRefreshTriggerView */,
+				002EC42E14A0093A0005E68D /* Frameworks */,
+				002EC42C14A0093A0005E68D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		002EC42C14A0093A0005E68D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		002EC42E14A0093A0005E68D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002EC42F14A0093A0005E68D /* UIKit.framework */,
+				002EC43114A0093A0005E68D /* Foundation.framework */,
+				002EC43314A0093A0005E68D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		002EC43514A0093A0005E68D /* PHRefreshTriggerView */ = {
+			isa = PBXGroup;
+			children = (
+				002EC43E14A0093A0005E68D /* PHAppDelegate.h */,
+				002EC43F14A0093A0005E68D /* PHAppDelegate.m */,
+				002EC44114A0093A0005E68D /* PHViewController.h */,
+				002EC44214A0093A0005E68D /* PHViewController.m */,
+				002EC44414A0093A0005E68D /* PHViewController.xib */,
+				002EC43614A0093A0005E68D /* Supporting Files */,
+			);
+			path = PHRefreshTriggerView;
+			sourceTree = "<group>";
+		};
+		002EC43614A0093A0005E68D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */,
+				002EC43814A0093A0005E68D /* InfoPlist.strings */,
+				002EC43B14A0093A0005E68D /* main.m */,
+				002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		002EC42A14A0093A0005E68D /* PHRefreshTriggerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "PHRefreshTriggerView" */;
+			buildPhases = (
+				002EC42714A0093A0005E68D /* Sources */,
+				002EC42814A0093A0005E68D /* Frameworks */,
+				002EC42914A0093A0005E68D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHRefreshTriggerView;
+			productName = PHRefreshTriggerView;
+			productReference = 002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		002EC42214A0093A0005E68D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "25th Avenue";
+			};
+			buildConfigurationList = 002EC42514A0093A0005E68D /* Build configuration list for PBXProject "PHRefreshTriggerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 002EC42014A0093A0005E68D;
+			productRefGroup = 002EC42C14A0093A0005E68D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				002EC42A14A0093A0005E68D /* PHRefreshTriggerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		002EC42914A0093A0005E68D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EC43A14A0093A0005E68D /* InfoPlist.strings in Resources */,
+				002EC44614A0093A0005E68D /* PHViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		002EC42714A0093A0005E68D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002EC43C14A0093A0005E68D /* main.m in Sources */,
+				002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */,
+				002EC44314A0093A0005E68D /* PHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		002EC43814A0093A0005E68D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002EC43914A0093A0005E68D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		002EC44414A0093A0005E68D /* PHViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				002EC44514A0093A0005E68D /* en */,
+			);
+			name = PHViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		002EC44714A0093A0005E68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		002EC44814A0093A0005E68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		002EC44A14A0093A0005E68D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHRefreshTriggerView/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "PHRefreshTriggerView/PHRefreshTriggerView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		002EC44B14A0093A0005E68D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHRefreshTriggerView/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "PHRefreshTriggerView/PHRefreshTriggerView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		002EC42514A0093A0005E68D /* Build configuration list for PBXProject "PHRefreshTriggerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EC44714A0093A0005E68D /* Debug */,
+				002EC44814A0093A0005E68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "PHRefreshTriggerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002EC44A14A0093A0005E68D /* Debug */,
+				002EC44B14A0093A0005E68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 002EC42214A0093A0005E68D /* Project object */;
+}
