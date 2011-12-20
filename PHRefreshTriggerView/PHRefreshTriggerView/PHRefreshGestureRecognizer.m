@@ -43,25 +43,32 @@
 #pragma mark - Accessories
 - (void)setRefreshState:(PHRefreshState)refreshState {
     if (refreshState != self->_refreshState) {
+        __block UIScrollView *bScrollView = self.scrollView;
+        
         switch (refreshState) {
             case PHRefreshTriggered:
                 //animate
                 break;
             case PHRefreshIdle:
                 if (self->_refreshState == PHRefreshLoading) {
-                    self.scrollView.contentInset = UIEdgeInsetsMake(0,
+                    [UIView animateWithDuration:0.2 animations:^{
+                        bScrollView.contentInset = UIEdgeInsetsMake(0,
                                                                     self.scrollView.contentInset.left,
                                                                     self.scrollView.contentInset.bottom,
-                                                                    self.scrollView.contentInset.right);                    
+                                                                    self.scrollView.contentInset.right);
+                    }];
+                                                                    
                 } else if (self->_refreshState == PHRefreshTriggered) {
                     //Animate
                 }
                 break;
             case PHRefreshLoading:
-                self.scrollView.contentInset = UIEdgeInsetsMake(60,
+                [UIView animateWithDuration:0.2 animations:^{                
+                    bScrollView.contentInset = UIEdgeInsetsMake(60,
                                                                 self.scrollView.contentInset.left,
                                                                 self.scrollView.contentInset.bottom,
                                                                 self.scrollView.contentInset.right);
+                }];
                 // Change to spinnger and stuff...
                 break;
         }
