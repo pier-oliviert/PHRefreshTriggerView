@@ -22,13 +22,13 @@
 		002EC42F14A0093A0005E68D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		002EC43114A0093A0005E68D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		002EC43314A0093A0005E68D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */ = {isa = PBXFileReference; path = "PHRefreshTriggerView-Info.plist"; sourceTree = "<group>"; };
+		002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PHRefreshTriggerView-Info.plist"; sourceTree = "<group>"; };
 		002EC43914A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		002EC43B14A0093A0005E68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */ = {isa = PBXFileReference; path = "PHRefreshTriggerView-Prefix.pch"; sourceTree = "<group>"; };
-		002EC43E14A0093A0005E68D /* PHAppDelegate.h */ = {isa = PBXFileReference; path = PHAppDelegate.h; sourceTree = "<group>"; };
+		002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHRefreshTriggerView-Prefix.pch"; sourceTree = "<group>"; };
+		002EC43E14A0093A0005E68D /* PHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAppDelegate.h; sourceTree = "<group>"; };
 		002EC43F14A0093A0005E68D /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
-		002EC44114A0093A0005E68D /* PHViewController.h */ = {isa = PBXFileReference; path = PHViewController.h; sourceTree = "<group>"; };
+		002EC44114A0093A0005E68D /* PHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHViewController.h; sourceTree = "<group>"; };
 		002EC44214A0093A0005E68D /* PHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
 		002EC44514A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PHViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
