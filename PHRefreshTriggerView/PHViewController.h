@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PHViewController : UIViewController
+@interface PHViewController : UIViewController {
+    UITableView *tableView;
+}
 
 @end

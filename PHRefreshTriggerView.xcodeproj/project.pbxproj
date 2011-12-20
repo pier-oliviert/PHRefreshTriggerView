@@ -15,6 +15,9 @@
 		002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC43F14A0093A0005E68D /* PHAppDelegate.m */; };
 		002EC44314A0093A0005E68D /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44214A0093A0005E68D /* PHViewController.m */; };
 		002EC44614A0093A0005E68D /* PHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002EC44414A0093A0005E68D /* PHViewController.xib */; };
+		002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */; };
+		002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */; };
+		002EC45314A0E2900005E68D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC45214A0E2900005E68D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,11 @@
 		002EC44114A0093A0005E68D /* PHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHViewController.h; sourceTree = "<group>"; };
 		002EC44214A0093A0005E68D /* PHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
 		002EC44514A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PHViewController.xib; sourceTree = "<group>"; };
+		002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshGestureRecognizer.h; path = PHRefreshTriggerView/PHRefreshGestureRecognizer.h; sourceTree = "<group>"; };
+		002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshGestureRecognizer.m; path = PHRefreshTriggerView/PHRefreshGestureRecognizer.m; sourceTree = "<group>"; };
+		002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshTriggerView.h; path = PHRefreshTriggerView/PHRefreshTriggerView.h; sourceTree = "<group>"; };
+		002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshTriggerView.m; path = PHRefreshTriggerView/PHRefreshTriggerView.m; sourceTree = "<group>"; };
+		002EC45214A0E2900005E68D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002EC45314A0E2900005E68D /* QuartzCore.framework in Frameworks */,
 				002EC43014A0093A0005E68D /* UIKit.framework in Frameworks */,
 				002EC43214A0093A0005E68D /* Foundation.framework in Frameworks */,
 				002EC43414A0093A0005E68D /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +76,7 @@
 		002EC42E14A0093A0005E68D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				002EC45214A0E2900005E68D /* QuartzCore.framework */,
 				002EC42F14A0093A0005E68D /* UIKit.framework */,
 				002EC43114A0093A0005E68D /* Foundation.framework */,
 				002EC43314A0093A0005E68D /* CoreGraphics.framework */,
@@ -83,6 +93,10 @@
 				002EC44214A0093A0005E68D /* PHViewController.m */,
 				002EC44414A0093A0005E68D /* PHViewController.xib */,
 				002EC43614A0093A0005E68D /* Supporting Files */,
+				002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */,
+				002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */,
+				002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */,
+				002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */,
 			);
 			path = PHRefreshTriggerView;
 			sourceTree = "<group>";
@@ -164,6 +178,8 @@
 				002EC43C14A0093A0005E68D /* main.m in Sources */,
 				002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */,
 				002EC44314A0093A0005E68D /* PHViewController.m in Sources */,
+				002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */,
+				002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

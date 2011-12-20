@@ -7,6 +7,7 @@
 //
 
 #import "PHViewController.h"
+#import "PHRefreshGestureRecognizer.h"
 
 @implementation PHViewController
 
@@ -21,7 +22,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self->tableView = [[[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain] autorelease];
+    [self->tableView addGestureRecognizer:[[[PHRefreshGestureRecognizer alloc] initWithTarget:self action:@selector(stateChanged:)] autorelease]];
+    [self.view addSubview:self->tableView];
+}
+
+- (void)stateChanged:(UIGestureRecognizer *)gesture {
+    if (gesture.state == UIGestureRecognizerStateRecognized) {
+        [self performSelector:@selector(resetRecognizer) withObject:nil afterDelay:2.0];
+    }
+}
+- (void)resetRecognizer {
+    [[self->tableView refreshGestureRecognizer] setRefreshState:PHRefreshIdle];
 }
 
 - (void)viewDidUnload
