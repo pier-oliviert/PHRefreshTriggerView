@@ -67,7 +67,8 @@ NSString * const PHRefreshResetGestureAnimationKey  = @"PHRefreshResetGestureAni
                                                                     self.scrollView.contentInset.bottom,
                                                                     self.scrollView.contentInset.right);
                     }];
-                             
+                    
+                    [self.triggerView.arrowView.layer removeAllAnimations];
                     [self.triggerView.activityView removeFromSuperview];
                     [self.triggerView.activityView stopAnimating];
                     [self.triggerView addSubview:self.triggerView.arrowView];

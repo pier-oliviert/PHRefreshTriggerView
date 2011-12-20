@@ -14,7 +14,7 @@
     UIActivityIndicatorView *_activityView;
 }
 
-@property (nonatomic, retain, readonly) UILabel *titleLabel;
-@property (nonatomic, retain, readonly) UIImageView *arrowView;
-@property (nonatomic, retain, readonly) UIActivityIndicatorView *activityView;
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UIImageView *arrowView;
+@property (nonatomic, retain) UIActivityIndicatorView *activityView;
 @end

@@ -10,11 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface PHRefreshTriggerView ()
-
-@property (nonatomic, retain, readwrite) UILabel *titleLabel;
-@property (nonatomic, retain, readwrite) UIImageView *arrowView;
-@property (nonatomic, retain, readwrite) UIActivityIndicatorView *activityView;
-
 @end
 
 @implementation PHRefreshTriggerView
@@ -24,12 +19,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.titleLabel     = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
-
         self.arrowView      = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"blackArrow"]] autorelease];
         self.activityView   = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray] autorelease];
         
         self.titleLabel.textAlignment   = UITextAlignmentCenter;
-
+        self.titleLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:self.titleLabel];
         
         [self addSubview:self.arrowView];
