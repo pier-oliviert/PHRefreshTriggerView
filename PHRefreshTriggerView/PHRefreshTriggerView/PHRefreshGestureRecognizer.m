@@ -10,9 +10,14 @@
 #import <UIKit/UIGestureRecognizerSubclass.h>
 #import "PHRefreshGestureRecognizer.h"
 
+#define FLIP_ARROW_ANIMATION_TIME 0.18f
+NSString * const PHRefreshGestureAnimationKey       = @"PHRefreshGestureAnimationKey";
+NSString * const PHRefreshResetGestureAnimationKey  = @"PHRefreshResetGestureAnimationKey";
+
 @interface PHRefreshGestureRecognizer ()
 
-- (BOOL)updateState:(PHRefreshState)state; //Return YES if it changed it.
+- (CABasicAnimation *)triggeredAnimation;
+- (CABasicAnimation *)idlingAnimation;
 
 @property (nonatomic, retain, readwrite) PHRefreshTriggerView *triggerView;
 
@@ -24,7 +29,9 @@
     self = [super initWithTarget:target action:action];
     
     if (self) {
-        self.triggerView = [[[PHRefreshTriggerView alloc] initWithFrame:CGRectZero] autorelease];
+        self.triggerView                    = [[[PHRefreshTriggerView alloc] initWithFrame:CGRectZero] autorelease];
+        self.triggerView.titleLabel.text    = NSLocalizedString(@"Pull to refresh...", @"PHRefreshTriggerView default");
+
         [self addObserver:self forKeyPath:@"view" options:NSKeyValueObservingOptionNew context:nil];
     }
     
@@ -47,7 +54,10 @@
         
         switch (refreshState) {
             case PHRefreshTriggered:
-                //animate
+                if (![self.triggerView.arrowView.layer animationForKey:PHRefreshGestureAnimationKey]) {
+                    [self.triggerView.arrowView.layer addAnimation:[self triggeredAnimation] forKey:PHRefreshGestureAnimationKey];
+                }
+                self.triggerView.titleLabel.text = NSLocalizedString(@"Release...", @"PHRefreshTriggerView Triggered");                
                 break;
             case PHRefreshIdle:
                 if (self->_refreshState == PHRefreshLoading) {
@@ -57,19 +67,31 @@
                                                                     self.scrollView.contentInset.bottom,
                                                                     self.scrollView.contentInset.right);
                     }];
-                                                                    
+                             
+                    [self.triggerView.activityView removeFromSuperview];
+                    [self.triggerView.activityView stopAnimating];
+                    [self.triggerView addSubview:self.triggerView.arrowView];
+
                 } else if (self->_refreshState == PHRefreshTriggered) {
-                    //Animate
+                    if ([self.triggerView.arrowView.layer animationForKey:PHRefreshGestureAnimationKey]) {
+                        [self.triggerView.arrowView.layer addAnimation:[self idlingAnimation] forKey:PHRefreshResetGestureAnimationKey];
+                    }
                 }
+                
+                self.triggerView.titleLabel.text = NSLocalizedString(@"Pull to refresh...", @"PHRefreshTriggerView default");
                 break;
             case PHRefreshLoading:
                 [UIView animateWithDuration:0.2 animations:^{                
-                    bScrollView.contentInset = UIEdgeInsetsMake(60,
+                    bScrollView.contentInset = UIEdgeInsetsMake(64,
                                                                 self.scrollView.contentInset.left,
                                                                 self.scrollView.contentInset.bottom,
                                                                 self.scrollView.contentInset.right);
                 }];
-                // Change to spinnger and stuff...
+                self.triggerView.titleLabel.text = NSLocalizedString(@"Loading...", @"PHRefreshTriggerView loading");
+                [self.triggerView.arrowView removeFromSuperview];
+                [self.triggerView addSubview:self.triggerView.activityView];
+                [self.triggerView.activityView startAnimating];
+                
                 break;
         }
         
@@ -78,10 +100,21 @@
 }
 
 - (CABasicAnimation *)triggeredAnimation {
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    animation.toValue = [NSNumber numberWithDouble:M_PI];
-    
+    CABasicAnimation *animation     = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.duration              = FLIP_ARROW_ANIMATION_TIME;
+    animation.toValue               = [NSNumber numberWithDouble:M_PI];
+    animation.fillMode              = kCAFillModeForwards;
+    animation.removedOnCompletion   = NO;
     return animation;
+}
+
+- (CABasicAnimation *)idlingAnimation {
+    CABasicAnimation *animation     = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.delegate              = self;
+    animation.duration              = FLIP_ARROW_ANIMATION_TIME;
+    animation.toValue               = [NSNumber numberWithDouble:0];
+    animation.removedOnCompletion   = YES;
+    return animation;    
 }
 
 - (UIScrollView *)scrollView {
@@ -93,7 +126,7 @@
     id obj = [object valueForKeyPath:keyPath];
     if ([obj isKindOfClass:[UIScrollView class]]) {
         self->_triggerFlags.isBoundToScrollView = YES;
-        self.triggerView.frame = CGRectMake(0, -60, CGRectGetWidth(self.view.frame), 60);
+        self.triggerView.frame = CGRectMake(0, -64, CGRectGetWidth(self.view.frame), 64);
         [obj addSubview:self.triggerView];
     } else {
         self->_triggerFlags.isBoundToScrollView = NO;
@@ -113,8 +146,12 @@
         if (self.state < UIGestureRecognizerStateBegan) {
             self.state = UIGestureRecognizerStateBegan;
         }
-        if (self.scrollView.contentOffset.y < -60) {
+
+        if (self.scrollView.contentOffset.y < -64) {
             self.refreshState   = PHRefreshTriggered;
+            self.state          = UIGestureRecognizerStateChanged;
+        } else if (self.state != UIGestureRecognizerStateRecognized) {
+            self.refreshState   = PHRefreshIdle;
             self.state          = UIGestureRecognizerStateChanged;
         }
     }
@@ -129,6 +166,11 @@
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     self.state = UIGestureRecognizerStateCancelled;
+}
+
+#pragma mark - CAAnimation Delegate
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    [self.triggerView.arrowView.layer removeAllAnimations];
 }
 
 #pragma mark - Synthesizers

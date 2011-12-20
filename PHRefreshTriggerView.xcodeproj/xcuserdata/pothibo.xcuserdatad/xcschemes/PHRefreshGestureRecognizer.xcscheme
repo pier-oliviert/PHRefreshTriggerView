@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "002EC42A14A0093A0005E68D"
-               BuildableName = "PHRefreshTriggerView.app"
-               BlueprintName = "PHRefreshTriggerView"
+               BlueprintIdentifier = "00A1A8AE14A1341500355AE2"
+               BuildableName = "PHRefreshGestureRecognizer.framework"
+               BlueprintName = "PHRefreshGestureRecognizer"
                ReferencedContainer = "container:PHRefreshTriggerView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,15 +28,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "002EC42A14A0093A0005E68D"
-            BuildableName = "PHRefreshTriggerView.app"
-            BlueprintName = "PHRefreshTriggerView"
-            ReferencedContainer = "container:PHRefreshTriggerView.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
@@ -46,15 +37,6 @@
       buildConfiguration = "Debug"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "002EC42A14A0093A0005E68D"
-            BuildableName = "PHRefreshTriggerView.app"
-            BlueprintName = "PHRefreshTriggerView"
-            ReferencedContainer = "container:PHRefreshTriggerView.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -64,15 +46,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "002EC42A14A0093A0005E68D"
-            BuildableName = "PHRefreshTriggerView.app"
-            BlueprintName = "PHRefreshTriggerView"
-            ReferencedContainer = "container:PHRefreshTriggerView.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

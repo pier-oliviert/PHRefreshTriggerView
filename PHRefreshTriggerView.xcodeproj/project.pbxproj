@@ -18,6 +18,15 @@
 		002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */; };
 		002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */; };
 		002EC45314A0E2900005E68D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC45214A0E2900005E68D /* QuartzCore.framework */; };
+		00A1A8B014A1341500355AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43114A0093A0005E68D /* Foundation.framework */; };
+		00A1A8BB14A1342B00355AE2 /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */; };
+		00A1A8BC14A1342B00355AE2 /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */; };
+		00A1A8BD14A1343800355AE2 /* PHRefreshTriggerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1A8BE14A1343800355AE2 /* PHRefreshGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00A1A8C214A1348800355AE2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C014A1348800355AE2 /* blackArrow.png */; };
+		00A1A8C314A1348800355AE2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C014A1348800355AE2 /* blackArrow.png */; };
+		00A1A8C414A1348800355AE2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C114A1348800355AE2 /* blackArrow@2x.png */; };
+		00A1A8C514A1348800355AE2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C114A1348800355AE2 /* blackArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +48,9 @@
 		002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshTriggerView.h; path = PHRefreshTriggerView/PHRefreshTriggerView.h; sourceTree = "<group>"; };
 		002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshTriggerView.m; path = PHRefreshTriggerView/PHRefreshTriggerView.m; sourceTree = "<group>"; };
 		002EC45214A0E2900005E68D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00A1A8AF14A1341500355AE2 /* PHRefreshGestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = PHRefreshGestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A1A8C014A1348800355AE2 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		00A1A8C114A1348800355AE2 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +65,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00A1A8AA14A1341500355AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1A8B014A1341500355AE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		002EC42014A0093A0005E68D = {
 			isa = PBXGroup;
 			children = (
-				002EC43514A0093A0005E68D /* PHRefreshTriggerView */,
+				00A1A8C614A1349C00355AE2 /* PHRefreshGestureRecognizer */,
+				002EC43514A0093A0005E68D /* Test Application */,
+				00A1A8BF14A1348800355AE2 /* resources */,
 				002EC42E14A0093A0005E68D /* Frameworks */,
 				002EC42C14A0093A0005E68D /* Products */,
 			);
@@ -69,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */,
+				00A1A8AF14A1341500355AE2 /* PHRefreshGestureRecognizer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +107,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		002EC43514A0093A0005E68D /* PHRefreshTriggerView */ = {
+		002EC43514A0093A0005E68D /* Test Application */ = {
 			isa = PBXGroup;
 			children = (
 				002EC43E14A0093A0005E68D /* PHAppDelegate.h */,
@@ -93,11 +116,8 @@
 				002EC44214A0093A0005E68D /* PHViewController.m */,
 				002EC44414A0093A0005E68D /* PHViewController.xib */,
 				002EC43614A0093A0005E68D /* Supporting Files */,
-				002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */,
-				002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */,
-				002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */,
-				002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */,
 			);
+			name = "Test Application";
 			path = PHRefreshTriggerView;
 			sourceTree = "<group>";
 		};
@@ -112,12 +132,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		00A1A8BF14A1348800355AE2 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				00A1A8C014A1348800355AE2 /* blackArrow.png */,
+				00A1A8C114A1348800355AE2 /* blackArrow@2x.png */,
+			);
+			name = resources;
+			path = PHRefreshTriggerView/resources;
+			sourceTree = "<group>";
+		};
+		00A1A8C614A1349C00355AE2 /* PHRefreshGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */,
+				002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */,
+				002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */,
+				002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */,
+			);
+			name = PHRefreshGestureRecognizer;
+			path = PHRefreshTriggerView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		00A1A8AB14A1341500355AE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1A8BD14A1343800355AE2 /* PHRefreshTriggerView.h in Headers */,
+				00A1A8BE14A1343800355AE2 /* PHRefreshGestureRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		002EC42A14A0093A0005E68D /* PHRefreshTriggerView */ = {
+		002EC42A14A0093A0005E68D /* Test Application */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "PHRefreshTriggerView" */;
+			buildConfigurationList = 002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "Test Application" */;
 			buildPhases = (
 				002EC42714A0093A0005E68D /* Sources */,
 				002EC42814A0093A0005E68D /* Frameworks */,
@@ -127,10 +181,30 @@
 			);
 			dependencies = (
 			);
-			name = PHRefreshTriggerView;
+			name = "Test Application";
 			productName = PHRefreshTriggerView;
 			productReference = 002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */;
 			productType = "com.apple.product-type.application";
+		};
+		00A1A8AE14A1341500355AE2 /* PHRefreshGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A1A8B814A1341500355AE2 /* Build configuration list for PBXNativeTarget "PHRefreshGestureRecognizer" */;
+			buildPhases = (
+				00A1A8A814A1341500355AE2 /* ShellScript */,
+				00A1A8A914A1341500355AE2 /* Sources */,
+				00A1A8AA14A1341500355AE2 /* Frameworks */,
+				00A1A8AB14A1341500355AE2 /* Headers */,
+				00A1A8AC14A1341500355AE2 /* Resources */,
+				00A1A8AD14A1341500355AE2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHRefreshGestureRecognizer;
+			productName = PHRefreshGestureRecognizer;
+			productReference = 00A1A8AF14A1341500355AE2 /* PHRefreshGestureRecognizer.framework */;
+			productType = "com.apple.product-type.framework.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,7 +227,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				002EC42A14A0093A0005E68D /* PHRefreshTriggerView */,
+				002EC42A14A0093A0005E68D /* Test Application */,
+				00A1A8AE14A1341500355AE2 /* PHRefreshGestureRecognizer */,
 			);
 		};
 /* End PBXProject section */
@@ -165,10 +240,50 @@
 			files = (
 				002EC43A14A0093A0005E68D /* InfoPlist.strings in Resources */,
 				002EC44614A0093A0005E68D /* PHViewController.xib in Resources */,
+				00A1A8C214A1348800355AE2 /* blackArrow.png in Resources */,
+				00A1A8C414A1348800355AE2 /* blackArrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A1A8AC14A1341500355AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1A8C314A1348800355AE2 /* blackArrow.png in Resources */,
+				00A1A8C514A1348800355AE2 /* blackArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A1A8A814A1341500355AE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+		};
+		00A1A8AD14A1341500355AE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		002EC42714A0093A0005E68D /* Sources */ = {
@@ -180,6 +295,15 @@
 				002EC44314A0093A0005E68D /* PHViewController.m in Sources */,
 				002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */,
 				002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A1A8A914A1341500355AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A1A8BB14A1342B00355AE2 /* PHRefreshTriggerView.m in Sources */,
+				00A1A8BC14A1342B00355AE2 /* PHRefreshGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +394,36 @@
 			};
 			name = Release;
 		};
+		00A1A8B914A1341500355AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Prefix.pch";
+				INFOPLIST_FILE = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		00A1A8BA14A1341500355AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Prefix.pch";
+				INFOPLIST_FILE = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,11 +436,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "PHRefreshTriggerView" */ = {
+		002EC44914A0093A0005E68D /* Build configuration list for PBXNativeTarget "Test Application" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				002EC44A14A0093A0005E68D /* Debug */,
 				002EC44B14A0093A0005E68D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A1A8B814A1341500355AE2 /* Build configuration list for PBXNativeTarget "PHRefreshGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A1A8B914A1341500355AE2 /* Debug */,
+				00A1A8BA14A1341500355AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

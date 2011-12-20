@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PHRefreshTriggerView.xcscheme</key>
+		<key>PHRefreshGestureRecognizer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Test Application.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>002EC42A14A0093A0005E68D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>00A1A8AE14A1341500355AE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
