@@ -21,7 +21,7 @@ Also I would like to thank [Enormego](https://github.com/enormego/EGOTableViewPu
 
 # License
 
-Copyright (C) 2012> Pier-Olivier Thibault
+Copyright (C) 2012 Pier-Olivier Thibault
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
