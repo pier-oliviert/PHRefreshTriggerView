@@ -27,6 +27,8 @@ typedef enum {
 @property (nonatomic, assign) PHRefreshState refreshState; // You can force a state by modifying this value.
 @property (nonatomic, readonly) UIScrollView *scrollView;
 
+@property (nonatomic, readonly, retain) PHRefreshTriggerView *triggerView; 
+
 @end
 
 @interface UIScrollView (PHRefreshGestureRecognizer)

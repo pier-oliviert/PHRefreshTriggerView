@@ -10,47 +10,43 @@
 		002EC43014A0093A0005E68D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC42F14A0093A0005E68D /* UIKit.framework */; };
 		002EC43214A0093A0005E68D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43114A0093A0005E68D /* Foundation.framework */; };
 		002EC43414A0093A0005E68D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43314A0093A0005E68D /* CoreGraphics.framework */; };
-		002EC43A14A0093A0005E68D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 002EC43814A0093A0005E68D /* InfoPlist.strings */; };
-		002EC43C14A0093A0005E68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC43B14A0093A0005E68D /* main.m */; };
-		002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC43F14A0093A0005E68D /* PHAppDelegate.m */; };
-		002EC44314A0093A0005E68D /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44214A0093A0005E68D /* PHViewController.m */; };
-		002EC44614A0093A0005E68D /* PHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002EC44414A0093A0005E68D /* PHViewController.xib */; };
-		002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */; };
-		002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */; };
 		002EC45314A0E2900005E68D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC45214A0E2900005E68D /* QuartzCore.framework */; };
+		00935E2414BB2B3C0045F79E /* PHRefreshGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 00935E1F14BB2B3C0045F79E /* PHRefreshGestureRecognizer.h */; };
+		00935E2514BB2B3C0045F79E /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E2014BB2B3C0045F79E /* PHRefreshGestureRecognizer.m */; };
+		00935E2614BB2B3C0045F79E /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E2014BB2B3C0045F79E /* PHRefreshGestureRecognizer.m */; };
+		00935E2714BB2B3C0045F79E /* PHRefreshTriggerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00935E2114BB2B3C0045F79E /* PHRefreshTriggerView.h */; };
+		00935E2814BB2B3C0045F79E /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E2214BB2B3C0045F79E /* PHRefreshTriggerView.m */; };
+		00935E2914BB2B3C0045F79E /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E2214BB2B3C0045F79E /* PHRefreshTriggerView.m */; };
+		00935E4A14BB2BA60045F79E /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00935E4814BB2BA60045F79E /* blackArrow.png */; };
+		00935E4B14BB2BA60045F79E /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00935E4914BB2BA60045F79E /* blackArrow@2x.png */; };
+		00935E4C14BB2CB50045F79E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E3114BB2B780045F79E /* main.m */; };
+		00935E4D14BB2CCC0045F79E /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E4014BB2B9B0045F79E /* PHAppDelegate.m */; };
+		00935E4E14BB2CD30045F79E /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00935E4214BB2B9B0045F79E /* PHViewController.m */; };
 		00A1A8B014A1341500355AE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002EC43114A0093A0005E68D /* Foundation.framework */; };
-		00A1A8BB14A1342B00355AE2 /* PHRefreshTriggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */; };
-		00A1A8BC14A1342B00355AE2 /* PHRefreshGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */; };
-		00A1A8BD14A1343800355AE2 /* PHRefreshTriggerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00A1A8BE14A1343800355AE2 /* PHRefreshGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00A1A8C214A1348800355AE2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C014A1348800355AE2 /* blackArrow.png */; };
-		00A1A8C314A1348800355AE2 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C014A1348800355AE2 /* blackArrow.png */; };
-		00A1A8C414A1348800355AE2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C114A1348800355AE2 /* blackArrow@2x.png */; };
-		00A1A8C514A1348800355AE2 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A1A8C114A1348800355AE2 /* blackArrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHRefreshTriggerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002EC42B14A0093A0005E68D /* Test Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		002EC42F14A0093A0005E68D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		002EC43114A0093A0005E68D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		002EC43314A0093A0005E68D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PHRefreshTriggerView-Info.plist"; sourceTree = "<group>"; };
-		002EC43914A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		002EC43B14A0093A0005E68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PHRefreshTriggerView-Prefix.pch"; sourceTree = "<group>"; };
-		002EC43E14A0093A0005E68D /* PHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAppDelegate.h; sourceTree = "<group>"; };
-		002EC43F14A0093A0005E68D /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
-		002EC44114A0093A0005E68D /* PHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHViewController.h; sourceTree = "<group>"; };
-		002EC44214A0093A0005E68D /* PHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
-		002EC44514A0093A0005E68D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PHViewController.xib; sourceTree = "<group>"; };
-		002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshGestureRecognizer.h; path = PHRefreshTriggerView/PHRefreshGestureRecognizer.h; sourceTree = "<group>"; };
-		002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshGestureRecognizer.m; path = PHRefreshTriggerView/PHRefreshGestureRecognizer.m; sourceTree = "<group>"; };
-		002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshTriggerView.h; path = PHRefreshTriggerView/PHRefreshTriggerView.h; sourceTree = "<group>"; };
-		002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshTriggerView.m; path = PHRefreshTriggerView/PHRefreshTriggerView.m; sourceTree = "<group>"; };
 		002EC45214A0E2900005E68D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00935E1F14BB2B3C0045F79E /* PHRefreshGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshGestureRecognizer.h; path = PHRefreshGestureRecognizer/PHRefreshGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		00935E2014BB2B3C0045F79E /* PHRefreshGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshGestureRecognizer.m; path = PHRefreshGestureRecognizer/PHRefreshGestureRecognizer.m; sourceTree = SOURCE_ROOT; };
+		00935E2114BB2B3C0045F79E /* PHRefreshTriggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRefreshTriggerView.h; path = PHRefreshGestureRecognizer/PHRefreshTriggerView.h; sourceTree = SOURCE_ROOT; };
+		00935E2214BB2B3C0045F79E /* PHRefreshTriggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRefreshTriggerView.m; path = PHRefreshGestureRecognizer/PHRefreshTriggerView.m; sourceTree = SOURCE_ROOT; };
+		00935E3114BB2B780045F79E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Test Application/main.m"; sourceTree = SOURCE_ROOT; };
+		00935E3214BB2B780045F79E /* PHRefreshTriggerView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PHRefreshTriggerView-Info.plist"; path = "Test Application/PHRefreshTriggerView-Info.plist"; sourceTree = SOURCE_ROOT; };
+		00935E3314BB2B780045F79E /* PHRefreshTriggerView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PHRefreshTriggerView-Prefix.pch"; path = "Test Application/PHRefreshTriggerView-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		00935E3A14BB2B8E0045F79E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Test Application/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		00935E3C14BB2B8E0045F79E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Test Application/en.lproj/PHViewController.xib"; sourceTree = SOURCE_ROOT; };
+		00935E3F14BB2B9B0045F79E /* PHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHAppDelegate.h; path = "Test Application/PHAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		00935E4014BB2B9B0045F79E /* PHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHAppDelegate.m; path = "Test Application/PHAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		00935E4114BB2B9B0045F79E /* PHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHViewController.h; path = "Test Application/PHViewController.h"; sourceTree = SOURCE_ROOT; };
+		00935E4214BB2B9B0045F79E /* PHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHViewController.m; path = "Test Application/PHViewController.m"; sourceTree = SOURCE_ROOT; };
+		00935E4814BB2BA60045F79E /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		00935E4914BB2BA60045F79E /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
 		00A1A8AF14A1341500355AE2 /* PHRefreshGestureRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = PHRefreshGestureRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		00A1A8C014A1348800355AE2 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
-		00A1A8C114A1348800355AE2 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +77,6 @@
 			children = (
 				00A1A8C614A1349C00355AE2 /* PHRefreshGestureRecognizer */,
 				002EC43514A0093A0005E68D /* Test Application */,
-				00A1A8BF14A1348800355AE2 /* resources */,
 				002EC42E14A0093A0005E68D /* Frameworks */,
 				002EC42C14A0093A0005E68D /* Products */,
 			);
@@ -90,7 +85,7 @@
 		002EC42C14A0093A0005E68D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */,
+				002EC42B14A0093A0005E68D /* Test Application.app */,
 				00A1A8AF14A1341500355AE2 /* PHRefreshGestureRecognizer.framework */,
 			);
 			name = Products;
@@ -110,11 +105,10 @@
 		002EC43514A0093A0005E68D /* Test Application */ = {
 			isa = PBXGroup;
 			children = (
-				002EC43E14A0093A0005E68D /* PHAppDelegate.h */,
-				002EC43F14A0093A0005E68D /* PHAppDelegate.m */,
-				002EC44114A0093A0005E68D /* PHViewController.h */,
-				002EC44214A0093A0005E68D /* PHViewController.m */,
-				002EC44414A0093A0005E68D /* PHViewController.xib */,
+				00935E3F14BB2B9B0045F79E /* PHAppDelegate.h */,
+				00935E4014BB2B9B0045F79E /* PHAppDelegate.m */,
+				00935E4114BB2B9B0045F79E /* PHViewController.h */,
+				00935E4214BB2B9B0045F79E /* PHViewController.m */,
 				002EC43614A0093A0005E68D /* Supporting Files */,
 			);
 			name = "Test Application";
@@ -124,31 +118,33 @@
 		002EC43614A0093A0005E68D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				002EC43714A0093A0005E68D /* PHRefreshTriggerView-Info.plist */,
-				002EC43814A0093A0005E68D /* InfoPlist.strings */,
-				002EC43B14A0093A0005E68D /* main.m */,
-				002EC43D14A0093A0005E68D /* PHRefreshTriggerView-Prefix.pch */,
+				00935E3914BB2B8E0045F79E /* InfoPlist.strings */,
+				00935E3B14BB2B8E0045F79E /* PHViewController.xib */,
+				00935E3114BB2B780045F79E /* main.m */,
+				00935E3214BB2B780045F79E /* PHRefreshTriggerView-Info.plist */,
+				00935E3314BB2B780045F79E /* PHRefreshTriggerView-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		00A1A8BF14A1348800355AE2 /* resources */ = {
+		00935E4714BB2BA60045F79E /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				00A1A8C014A1348800355AE2 /* blackArrow.png */,
-				00A1A8C114A1348800355AE2 /* blackArrow@2x.png */,
+				00935E4814BB2BA60045F79E /* blackArrow.png */,
+				00935E4914BB2BA60045F79E /* blackArrow@2x.png */,
 			);
 			name = resources;
-			path = PHRefreshTriggerView/resources;
-			sourceTree = "<group>";
+			path = PHRefreshGestureRecognizer/resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		00A1A8C614A1349C00355AE2 /* PHRefreshGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				002EC44F14A0CF6B0005E68D /* PHRefreshTriggerView.h */,
-				002EC45014A0CF6B0005E68D /* PHRefreshTriggerView.m */,
-				002EC44C14A0098B0005E68D /* PHRefreshGestureRecognizer.h */,
-				002EC44D14A0098B0005E68D /* PHRefreshGestureRecognizer.m */,
+				00935E1F14BB2B3C0045F79E /* PHRefreshGestureRecognizer.h */,
+				00935E2014BB2B3C0045F79E /* PHRefreshGestureRecognizer.m */,
+				00935E2114BB2B3C0045F79E /* PHRefreshTriggerView.h */,
+				00935E2214BB2B3C0045F79E /* PHRefreshTriggerView.m */,
+				00935E4714BB2BA60045F79E /* resources */,
 			);
 			name = PHRefreshGestureRecognizer;
 			path = PHRefreshTriggerView;
@@ -161,8 +157,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A1A8BD14A1343800355AE2 /* PHRefreshTriggerView.h in Headers */,
-				00A1A8BE14A1343800355AE2 /* PHRefreshGestureRecognizer.h in Headers */,
+				00935E2414BB2B3C0045F79E /* PHRefreshGestureRecognizer.h in Headers */,
+				00935E2714BB2B3C0045F79E /* PHRefreshTriggerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +179,7 @@
 			);
 			name = "Test Application";
 			productName = PHRefreshTriggerView;
-			productReference = 002EC42B14A0093A0005E68D /* PHRefreshTriggerView.app */;
+			productReference = 002EC42B14A0093A0005E68D /* Test Application.app */;
 			productType = "com.apple.product-type.application";
 		};
 		00A1A8AE14A1341500355AE2 /* PHRefreshGestureRecognizer */ = {
@@ -238,10 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002EC43A14A0093A0005E68D /* InfoPlist.strings in Resources */,
-				002EC44614A0093A0005E68D /* PHViewController.xib in Resources */,
-				00A1A8C214A1348800355AE2 /* blackArrow.png in Resources */,
-				00A1A8C414A1348800355AE2 /* blackArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A1A8C314A1348800355AE2 /* blackArrow.png in Resources */,
-				00A1A8C514A1348800355AE2 /* blackArrow@2x.png in Resources */,
+				00935E4A14BB2BA60045F79E /* blackArrow.png in Resources */,
+				00935E4B14BB2BA60045F79E /* blackArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002EC43C14A0093A0005E68D /* main.m in Sources */,
-				002EC44014A0093A0005E68D /* PHAppDelegate.m in Sources */,
-				002EC44314A0093A0005E68D /* PHViewController.m in Sources */,
-				002EC44E14A0098B0005E68D /* PHRefreshGestureRecognizer.m in Sources */,
-				002EC45114A0CF6B0005E68D /* PHRefreshTriggerView.m in Sources */,
+				00935E4E14BB2CD30045F79E /* PHViewController.m in Sources */,
+				00935E4D14BB2CCC0045F79E /* PHAppDelegate.m in Sources */,
+				00935E4C14BB2CB50045F79E /* main.m in Sources */,
+				00935E2514BB2B3C0045F79E /* PHRefreshGestureRecognizer.m in Sources */,
+				00935E2814BB2B3C0045F79E /* PHRefreshTriggerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,26 +294,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A1A8BB14A1342B00355AE2 /* PHRefreshTriggerView.m in Sources */,
-				00A1A8BC14A1342B00355AE2 /* PHRefreshGestureRecognizer.m in Sources */,
+				00935E2614BB2B3C0045F79E /* PHRefreshGestureRecognizer.m in Sources */,
+				00935E2914BB2B3C0045F79E /* PHRefreshTriggerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		002EC43814A0093A0005E68D /* InfoPlist.strings */ = {
+		00935E3914BB2B8E0045F79E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				002EC43914A0093A0005E68D /* en */,
+				00935E3A14BB2B8E0045F79E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		002EC44414A0093A0005E68D /* PHViewController.xib */ = {
+		00935E3B14BB2B8E0045F79E /* PHViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				002EC44514A0093A0005E68D /* en */,
+				00935E3C14BB2B8E0045F79E /* en */,
 			);
 			name = PHViewController.xib;
 			sourceTree = "<group>";
@@ -376,8 +368,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PHRefreshTriggerView/PHRefreshTriggerView-Prefix.pch";
-				INFOPLIST_FILE = "PHRefreshTriggerView/PHRefreshTriggerView-Info.plist";
+				GCC_PREFIX_HEADER = "Test Application/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "Test Application/PHRefreshTriggerView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -387,8 +379,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PHRefreshTriggerView/PHRefreshTriggerView-Prefix.pch";
-				INFOPLIST_FILE = "PHRefreshTriggerView/PHRefreshTriggerView-Info.plist";
+				GCC_PREFIX_HEADER = "Test Application/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "Test Application/PHRefreshTriggerView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -401,8 +393,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Prefix.pch";
-				INFOPLIST_FILE = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Info.plist";
+				GCC_PREFIX_HEADER = "Test Application/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "Test Application/PHRefreshTriggerView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -416,8 +408,8 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Prefix.pch";
-				INFOPLIST_FILE = "PHRefreshGestureRecognizer/PHRefreshGestureRecognizer-Info.plist";
+				GCC_PREFIX_HEADER = "Test Application/PHRefreshTriggerView-Prefix.pch";
+				INFOPLIST_FILE = "Test Application/PHRefreshTriggerView-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -452,6 +444,7 @@
 				00A1A8BA14A1341500355AE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
