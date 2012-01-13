@@ -162,6 +162,9 @@ NSString * const PHRefreshResetGestureAnimationKey  = @"PHRefreshResetGestureAni
     if (self.refreshState == PHRefreshTriggered) {
         self.refreshState   = PHRefreshLoading;
         self.state          = UIGestureRecognizerStateRecognized;
+    } else {
+        self.state          = UIGestureRecognizerStateCancelled;
+        self.refreshState   = PHRefreshIdle;
     }
 }
 
