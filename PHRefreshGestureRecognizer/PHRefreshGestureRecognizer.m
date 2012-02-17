@@ -142,34 +142,55 @@ NSString * const PHRefreshResetGestureAnimationKey  = @"PHRefreshResetGestureAni
     return NO;
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    if (self->_triggerFlags.isBoundToScrollView) {
-        if (self.state < UIGestureRecognizerStateBegan) {
-            self.state = UIGestureRecognizerStateBegan;
-        }
-
-        if (self.scrollView.contentOffset.y < -64) {
-            self.refreshState   = PHRefreshTriggered;
-            self.state          = UIGestureRecognizerStateChanged;
-        } else if (self.state != UIGestureRecognizerStateRecognized) {
-            self.refreshState   = PHRefreshIdle;
-            self.state          = UIGestureRecognizerStateChanged;
-        }
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    if (self.refreshState == PHRefreshLoading)
+    {
+        self.state = UIGestureRecognizerStateFailed;
+        return;
     }
+    
+    if (_triggerFlags.isBoundToScrollView)
+        self.state = UIGestureRecognizerStatePossible;
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    if (self.refreshState == PHRefreshTriggered) {
-        self.refreshState   = PHRefreshLoading;
-        self.state          = UIGestureRecognizerStateRecognized;
-    } else {
-        self.state          = UIGestureRecognizerStateCancelled;
-        self.refreshState   = PHRefreshIdle;
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    if (self.refreshState == PHRefreshLoading)
+    {
+        self.state = UIGestureRecognizerStateFailed;
+        return;
     }
+    
+    if (_triggerFlags.isBoundToScrollView)
+        if (self.scrollView.contentOffset.y < -64)
+            self.refreshState = PHRefreshTriggered;
+        else if (self.state != UIGestureRecognizerStateRecognized)
+            self.refreshState = PHRefreshIdle;
 }
 
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-    self.state = UIGestureRecognizerStateCancelled;
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    if (self.refreshState == PHRefreshLoading)
+    {
+        self.state = UIGestureRecognizerStateFailed;
+        return;
+    }
+    
+    if (_triggerFlags.isBoundToScrollView)
+        if (self.refreshState == PHRefreshTriggered)
+        {
+            self.refreshState = PHRefreshLoading;
+            self.state = UIGestureRecognizerStateRecognized;
+        } else {
+            self.refreshState = PHRefreshIdle;
+            self.state = UIGestureRecognizerStateFailed;
+        }
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+{
+    self.state = UIGestureRecognizerStateFailed;
 }
 
 #pragma mark - CAAnimation Delegate
