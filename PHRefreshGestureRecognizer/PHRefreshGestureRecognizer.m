@@ -144,14 +144,13 @@ NSString * const PHRefreshResetGestureAnimationKey  = @"PHRefreshResetGestureAni
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 {
-    if (self.refreshState == PHRefreshLoading)
+    if (self.refreshState == PHRefreshLoading || !_triggerFlags.isBoundToScrollView)
     {
         self.state = UIGestureRecognizerStateFailed;
         return;
     }
     
-    if (_triggerFlags.isBoundToScrollView)
-        self.state = UIGestureRecognizerStatePossible;
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
